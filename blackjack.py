@@ -1,5 +1,5 @@
 import random
-import art
+import blackjack_art
 
 def over_21():
     if sum(player_cards) > 21:
@@ -79,7 +79,7 @@ for count in range(100):
     want_to_play = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
     if want_to_play.lower() == "y":
         print("\n" * 100)
-        print(art.logo)
+        print(blackjack_art.logo)
         initialize_decks()
         display()
         if immediate_blackjack():
